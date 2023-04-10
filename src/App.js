@@ -4,33 +4,19 @@ import './App.css';
 import wordImg from './assets/word.svg'
 
 import Foot from './component/Foot'
+import Monsters from './component/Monsters';
+import Navbar from './component/Navbar';
+
+
 
 
 
 function App() {
   return (
     <>
-
-
-
-      <nav className="navbar navbar-expand-sm bg-dark">
-
-        <div className="container-fluid ">
-
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link text-light" href="http://localhost:3000/">HOME</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-light" href="http://localhost:3000/">ABOUT US</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-light" href="http://localhost:3000/">SERVICE</a>
-            </li>
-          </ul>
-        </div>
-
-      </nav>
+  <Navbar />
+      
+      
       <div className='bg'>
         <div className='row'>
           <div className='col-md-4'>
@@ -74,6 +60,7 @@ function App() {
 
         </div>
       </div>
+      <Monsters />
       <Foot />
 
 
